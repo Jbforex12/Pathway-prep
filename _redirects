@@ -1,0 +1,4 @@
+/partners      https://pathway-prep-portal.onrender.com/partners      302
+/partners/*    https://pathway-prep-portal.onrender.com/partners/:splat     302
+/admin         https://pathway-prep-portal.onrender.com/admin       302
+/admin/*       https://pathway-prep-portal.onrender.com/admin/:splat      302
