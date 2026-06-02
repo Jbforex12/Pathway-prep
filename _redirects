@@ -1,4 +1,5 @@
-/partners      https://pathway-prep-portal.onrender.com/partners      302
-/partners/*    https://pathway-prep-portal.onrender.com/partners/:splat     302
-/admin         https://pathway-prep-portal.onrender.com/admin       302
-/admin/*       https://pathway-prep-portal.onrender.com/admin/:splat      302
+# Send legacy /partners and /admin paths to the partners subdomain (never onrender.com).
+/partners      https://partners.pathwayprep.online/partners      301
+/partners/*    https://partners.pathwayprep.online/partners/:splat     301
+/admin         https://partners.pathwayprep.online/admin       301
+/admin/*       https://partners.pathwayprep.online/admin/:splat      301
