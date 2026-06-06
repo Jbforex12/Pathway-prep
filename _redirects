@@ -1,9 +1,9 @@
 # Only redirect on the main landing domain — not on partners.pathwayprep.online (avoids redirect loops).
-https://pathwayprep.online/partners        https://partners.pathwayprep.online/partners        301
+https://pathwayprep.online/partners        https://partners.pathwayprep.online/        301
 https://pathwayprep.online/partners/*       https://partners.pathwayprep.online/partners/:splat       301
 https://pathwayprep.online/admin            https://partners.pathwayprep.online/admin            301
 https://pathwayprep.online/admin/*          https://partners.pathwayprep.online/admin/:splat          301
-http://pathwayprep.online/partners          https://partners.pathwayprep.online/partners        301!
+http://pathwayprep.online/partners          https://partners.pathwayprep.online/        301!
 http://pathwayprep.online/partners/*         https://partners.pathwayprep.online/partners/:splat       301!
 http://pathwayprep.online/admin             https://partners.pathwayprep.online/admin            301!
 http://pathwayprep.online/admin/*           https://partners.pathwayprep.online/admin/:splat          301!
