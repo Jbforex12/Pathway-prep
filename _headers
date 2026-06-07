@@ -1,0 +1,12 @@
+/admin
+  Cache-Control: no-store, no-cache, must-revalidate
+/admin/*
+  Cache-Control: no-store, no-cache, must-revalidate
+/api/admin/*
+  Cache-Control: no-store, no-cache, must-revalidate
+/api/bot/*
+  Cache-Control: no-store, no-cache, must-revalidate
+/api/companies
+  Cache-Control: no-store, no-cache, must-revalidate
+/api/companies/*
+  Cache-Control: no-store, no-cache, must-revalidate
