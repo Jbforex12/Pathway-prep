@@ -5,9 +5,11 @@ http://pathwayprep.online/partners          https://partners.pathwayprep.online/
 http://pathwayprep.online/partners/*         https://partners.pathwayprep.online/partners/:splat       301!
 
 # Operations admin — proxy (200) so the address bar stays pathwayprep.online/admin
-https://pathwayprep.online/admin            https://partners.pathwayprep.online/admin            200
+https://pathwayprep.online/admin            https://partners.pathwayprep.online/admin/            200
+https://pathwayprep.online/admin/           https://partners.pathwayprep.online/admin/            200
 https://pathwayprep.online/admin/*          https://partners.pathwayprep.online/admin/:splat          200
-http://pathwayprep.online/admin             https://partners.pathwayprep.online/admin            200!
+http://pathwayprep.online/admin             https://partners.pathwayprep.online/admin/            200!
+http://pathwayprep.online/admin/            https://partners.pathwayprep.online/admin/            200!
 http://pathwayprep.online/admin/*           https://partners.pathwayprep.online/admin/:splat          200!
 
 # Admin APIs + portal static assets (required for the proxied admin app)
