@@ -20,3 +20,12 @@ https://pathwayprep.online/api/companies/*  https://partners.pathwayprep.online/
 https://pathwayprep.online/_next/*          https://partners.pathwayprep.online/_next/:splat          200
 https://pathwayprep.online/logo.png         https://partners.pathwayprep.online/logo.png         200
 https://pathwayprep.online/logo.svg         https://partners.pathwayprep.online/logo.svg         200
+
+# CBT exams — proxy to exams Render service (separate from partners admin API)
+https://pathwayprep.online/exams            https://exams.pathwayprep.online/            200!
+https://pathwayprep.online/exams/           https://exams.pathwayprep.online/            200!
+https://pathwayprep.online/exams/*          https://exams.pathwayprep.online/:splat          200!
+http://pathwayprep.online/exams             https://exams.pathwayprep.online/            200!
+http://pathwayprep.online/exams/            https://exams.pathwayprep.online/            200!
+http://pathwayprep.online/exams/*           https://exams.pathwayprep.online/:splat          200!
+https://pathwayprep.online/api/exam/*       https://exams.pathwayprep.online/api/exam/:splat       200
