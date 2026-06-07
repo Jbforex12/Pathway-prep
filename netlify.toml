@@ -1,3 +1,16 @@
+# Bust stale edge cache on /admin/ (old 301 loop). 302 + query lands on a fresh cache key.
+[[redirects]]
+  from = "/admin/"
+  to = "/admin/?open=1"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/?open=1"
+  status = 302
+  force = true
+
 # Prevent Netlify Edge from caching stale proxied admin responses (old 301 loops).
 [[headers]]
   for = "/admin"
