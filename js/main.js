@@ -15,6 +15,7 @@
     if (!menuToggle || !mobileNav) return;
     menuToggle.setAttribute("aria-expanded", "false");
     mobileNav.classList.remove("is-open");
+    document.body.classList.remove("menu-open");
     document.body.style.overflow = "";
   }
 
@@ -23,6 +24,7 @@
       const open = menuToggle.getAttribute("aria-expanded") === "true";
       menuToggle.setAttribute("aria-expanded", String(!open));
       mobileNav.classList.toggle("is-open", !open);
+      document.body.classList.toggle("menu-open", !open);
       document.body.style.overflow = !open ? "hidden" : "";
     });
 
