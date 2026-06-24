@@ -37,6 +37,22 @@
     });
   }
 
+  const tocPanel = document.querySelector(".legal-toc-panel");
+  if (tocPanel) {
+    const desktopMq = window.matchMedia("(min-width: 900px)");
+    const syncToc = () => {
+      tocPanel.open = desktopMq.matches;
+    };
+    syncToc();
+    desktopMq.addEventListener("change", syncToc);
+
+    tocPanel.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (!desktopMq.matches) tocPanel.open = false;
+      });
+    });
+  }
+
   document.querySelectorAll(".reveal").forEach((el, index) => {
     if (!el.style.getPropertyValue("--reveal-delay")) {
       el.style.setProperty("--reveal-delay", `${Math.min(index * 0.08, 0.4)}s`);
